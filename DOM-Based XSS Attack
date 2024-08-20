@@ -29,7 +29,7 @@
 
         var hobby = document.getElementById("hobby").value;
         var message = document.getElementById("message"); 
-        // What are we editing here?
+        // What are we editing here? Notice that if you tried to inject a script tag directly into the text box, it wouldn't work. But, if we used an img tag with the built in onerror attribute, we can bypass this safeguard and execute code on people's browsers!
         message.outerHTML = "Nice to meet you! We also love " + hobby + "!";
       }
     </script>
